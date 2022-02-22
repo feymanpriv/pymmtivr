@@ -5,6 +5,7 @@
 
 """Tokenizer."""
 
+
 import transformers
 from .simple_tokenizer import SimpleTokenizer as _Tokenizer
 
@@ -19,7 +20,7 @@ class Tokenizer():
             self.tokenizer = tokenize
         elif self.model == 'FrozenInTime':
             self.tokenizer = transformers.AutoTokenizer.from_pretrained(
-							 "distilbert-base-uncased", TOKENIZERS_PARALLELISM=False)
+				        "distilbert-base-uncased", TOKENIZERS_PARALLELISM=False)
         else:
             raise ValueError('Model not recognized.') 
 

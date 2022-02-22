@@ -7,6 +7,7 @@
 
 """Transform."""
 
+
 import numpy as np
 from PIL import Image
 
@@ -17,6 +18,7 @@ try:
     BICUBIC = InterpolationMode.BICUBIC
 except ImportError:
     BICUBIC = Image.BICUBIC
+
 from mmtivr.core.config import cfg
 
 

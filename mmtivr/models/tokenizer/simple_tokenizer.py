@@ -5,6 +5,7 @@
 
 """CLIP tokenizer."""
 
+
 import gzip
 import html
 import os
