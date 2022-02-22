@@ -24,7 +24,6 @@ from mmtivr.dataset.transforms import get_transform
 logger = logging.get_logger(__name__)
 
 
-
 class VideoTextDataset(torch.utils.data.Dataset):
     """Video text dataset."""
     def __init__(self, data_path, split):
